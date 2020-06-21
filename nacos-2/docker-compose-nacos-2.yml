@@ -7,7 +7,8 @@ services:
     ports:
       - "8848:8848"
       - "9555:9555"
-    networks: nacos_net
+    networks: 
+      - nacos_net
     restart: 
       - on-failure
     privileged: true
